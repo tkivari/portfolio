@@ -9,8 +9,69 @@
         background-size cover
         width 100%
         height 100%
-
+        position relative
+        #slide1-content
+            font-family verdana,sans-serif
+            padding 30px 40px
+            max-width 550px
+            font-size 16px
+            line-height 30px
+            background url(/assets/images/arrow1.png)
+            background-repeat no-repeat
+            background-size 30% 80%
+            background-position 0 20px
+            position relative
+            margin-top -10px
+        #skills-rider
+            position absolute
+            right 10px
+            transform rotate(90deg)
+            font-size 34px
+            top 0px
+            width 480px
+            bottom 0
+            font-family logo
 .head-banner
     width 100vw
-    height 20px
-    background  #777
+    height 2px
+    background  #222
+
+.nav-container
+    display flex
+    justify-content space-around
+
+    .nav-item
+        display block
+        padding 10px
+        font-size 20px
+        color white
+        font-family verdana, sans-serif
+        width 33%
+        text-align center
+        cursor pointer
+        
+    .nav-item:first-child
+        background linear-gradient(#0b51c1, #4286f4)
+    .nav-item:first-child:hover
+        background #4286f4
+    
+
+    .nav-item:nth-child(2)
+        background linear-gradient(#b80bc1, #eb41f4)
+    .nav-item:nth-child(2):hover
+        background #eb41f4
+
+    .nav-item:last-child
+        background linear-gradient(#0f7017, #1dd12c)
+    .nav-item:last-child:hover
+        background #1dd12c
+
+ @media screen and (max-width: 600px)
+    .carousel
+        #slide1
+            #slide1-content
+                padding 30px 70px 30px 50px
+                text-align justify
+                background-size 50%
+                line-height 27px
+    
